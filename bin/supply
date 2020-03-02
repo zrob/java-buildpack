@@ -9,6 +9,8 @@ DEPS_IDX=$4
 
 cat <<EOF >"${DEPS_DIR}/${DEPS_IDX}/config.yml"
 ---
-name: bobby
-version: 5.0
+name: "bobby"
+version: "5.0"
+config:
+  some: stuff
 EOF
