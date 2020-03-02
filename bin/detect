@@ -29,6 +29,6 @@ components = JavaBuildpack::Buildpack.with_buildpack(app_dir, 'Detect failed wit
 if components.empty?
   abort
 else
-  str = components.join(" ")
-  puts str
+  str = components.join(' ')
+  puts str.length > 255 ? str.slice(0..251) + '...' : str
 end
