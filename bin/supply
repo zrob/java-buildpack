@@ -1,0 +1,14 @@
+#!/bin/bash
+set -euo pipefail
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+DEPS_DIR=$3
+DEPS_IDX=$4
+
+
+cat <<EOF >"${BUILD_DIR}/${CACHE_DIR}/${DEPS_DIR}/${DEPS_IDX}/config.yml"
+---
+name: bobby
+version: 5.0
+EOF
