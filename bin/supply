@@ -7,7 +7,7 @@ DEPS_DIR=$3
 DEPS_IDX=$4
 
 
-cat <<EOF >"${BUILD_DIR}/${CACHE_DIR}/${DEPS_DIR}/${DEPS_IDX}/config.yml"
+cat <<EOF >"${DEPS_DIR}/${DEPS_IDX}/config.yml"
 ---
 name: bobby
 version: 5.0
